@@ -17,6 +17,6 @@ class MathPlayground
   	out = {
       "data" => tris
     }
-    out
+    out.to_json
   end
 end
