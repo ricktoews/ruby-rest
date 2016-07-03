@@ -1,4 +1,4 @@
-require './classes/payload'
+require './payload'
 payload = Payload.new
 
 class MathPlayground
