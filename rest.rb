@@ -1,5 +1,3 @@
-#!/usr/local/bin/ruby
-
 require 'sinatra'
 require 'json'
 
