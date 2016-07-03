@@ -3,6 +3,6 @@ class Payload
     out = {
       "data" => data
     }
-    out
+    out.to_json
   end
 end

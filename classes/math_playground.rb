@@ -1,3 +1,4 @@
+payload = Payload.new
 class MathPlayground
   def tri(n)
   	n*(n+1)/2
@@ -14,9 +15,6 @@ class MathPlayground
   		end
   		i = i + 1
   	end while tmp <= max
-  	out = {
-      "data" => tris
-    }
-    out.to_json
+    payload.output_json(tris)
   end
 end
