@@ -14,9 +14,6 @@ class MathPlayground
   		end
   		i = i + 1
   	end while tmp <= max
-  	out = {
-      "tri" => tris
-    }
-    out.to_json
+  	tris
   end
 end
