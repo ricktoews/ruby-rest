@@ -1,11 +1,6 @@
 require 'sinatra'
 require 'json'
 
-math = Math.new
-get '/tri/:n' do
-  math.tri_lte(params[:n])
-end
-
 class Math
   def tri(n)
   	n*(n+1)/2
@@ -27,4 +22,9 @@ class Math
     }
     out.to_json
   end
+end
+
+math = Math.new
+get '/tri/:n' do
+  math.tri_lte(params[:n])
 end
