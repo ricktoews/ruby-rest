@@ -14,6 +14,6 @@ class MathPlayground
   		end
   		i = i + 1
   	end while tmp <= max
-    payload.output_json(tris)
+    tris
   end
 end
