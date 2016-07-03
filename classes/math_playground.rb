@@ -14,6 +14,8 @@ class MathPlayground
   		end
   		i = i + 1
   	end while tmp <= max
-  	tris
+  	out = {
+      "data" => tris
+    }
   end
 end
