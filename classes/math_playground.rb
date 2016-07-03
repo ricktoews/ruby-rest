@@ -1,3 +1,6 @@
+require './classes/payload'
+payload = Payload.new
+
 class MathPlayground
   def tri(n)
   	n*(n+1)/2
