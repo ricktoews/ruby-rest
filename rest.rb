@@ -2,10 +2,7 @@ require 'sinatra'
 require 'json'
 
 get '/tri/:n' do
-	out = {
-		"tri" => tri_lte(params[:n])
-	}
-	out.to_json
+  tri_lte(params[:n])
 end
 
 def tri(n)
@@ -23,5 +20,8 @@ def tri_lte(max)
 		end
 		i = i + 1
 	end while tmp <= max
-	tris
+	out = {
+    "tri" => tris
+  }
+  out.to_json
 end
