@@ -1,5 +1,5 @@
 class Payload
-  def json(data)
+  def output_json(data)
     out = {
       "data" => data
     }
