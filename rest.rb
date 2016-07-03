@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'json'
 require './classes/math_playground'
-require './payload'
+require './classes/payload'
 payload = Payload.new
 
 math = MathPlayground.new
