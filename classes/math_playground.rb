@@ -17,5 +17,6 @@ class MathPlayground
   	out = {
       "data" => tris
     }
+    out
   end
 end
