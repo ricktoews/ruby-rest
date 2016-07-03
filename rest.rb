@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'json'
 
-class Math
+class MathPlayground
   def tri(n)
   	n*(n+1)/2
   end
@@ -24,7 +24,7 @@ class Math
   end
 end
 
-math = Math.new
+math = MathPlayground.new
 get '/tri/:n' do
   math.tri_lte(params[:n])
 end
