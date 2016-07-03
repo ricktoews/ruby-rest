@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'json'
 
-math = new Math
+math = Math.new
 get '/tri/:n' do
   math.tri_lte(params[:n])
 end
